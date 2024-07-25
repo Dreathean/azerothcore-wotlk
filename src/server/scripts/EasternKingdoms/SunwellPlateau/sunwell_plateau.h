@@ -19,6 +19,10 @@
 #define SUNWELL_PLATEAU_H
 
 #include "CreatureAIImpl.h"
+#include "PassiveAI.h"
+#include "Player.h"
+#include "SpellAuraEffects.h"
+#include "SpellScript.h"
 
 #define DataHeader "SWP"
 

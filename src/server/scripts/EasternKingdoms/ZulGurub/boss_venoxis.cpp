@@ -17,6 +17,7 @@
 
 #include "CreatureScript.h"
 #include "ScriptedCreature.h"
+#include "Spell.h"
 #include "zulgurub.h"
 
 /*

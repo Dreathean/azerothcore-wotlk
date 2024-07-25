@@ -114,7 +114,7 @@ public:
         CharacterDatabase.Execute(delStmt);
 
         std::string nameLink = handler->playerLink(player.GetName());
-        handler->PSendSysMessage(LANG_MAIL_SENT, nameLink);
+        handler->PSendSysMessage(LANG_MAIL_SENT, nameLink.c_str());
         return true;
     }
 

@@ -16,11 +16,9 @@
  */
 
 #include "CreatureScript.h"
-#include "PassiveAI.h"
 #include "Player.h"
 #include "ScriptedCreature.h"
-#include "SpellAuraEffects.h"
-#include "SpellScript.h"
+#include "SpellInfo.h"
 #include "SpellScriptLoader.h"
 #include "sunwell_plateau.h"
 

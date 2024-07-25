@@ -18,6 +18,8 @@
 #ifndef DEF_STRATHOLME_H
 #define DEF_STRATHOLME_H
 
+#include "SpellAuras.h"
+
 #define DataHeader "STR"
 #define StratholmeScriptName "instance_stratholme"
 

@@ -18,8 +18,6 @@
 #include "CreatureScript.h"
 #include "Player.h"
 #include "ScriptedCreature.h"
-#include "SpellAuraEffects.h"
-#include "SpellScript.h"
 #include "SpellScriptLoader.h"
 #include "WorldSession.h"
 #include "sunwell_plateau.h"

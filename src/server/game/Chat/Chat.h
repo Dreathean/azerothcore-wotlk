@@ -55,24 +55,23 @@ public:
     virtual void SendSysMessage(std::string_view str, bool escapeCharacters = false);
 
     void SendSysMessage(uint32 entry);
-    void PSendSysMessage(std::string_view str, bool escapeCharacters = false);
 
     template<typename... Args>
     void PSendSysMessage(char const* fmt, Args&&... args)
     {
-        SendSysMessage(Acore::StringFormatFmt(fmt, std::forward<Args>(args)...));
+        SendSysMessage(Acore::StringFormat(fmt, std::forward<Args>(args)...).c_str());
     }
 
     template<typename... Args>
     void PSendSysMessage(uint32 entry, Args&&... args)
     {
-        SendSysMessage(PGetParseString(entry, std::forward<Args>(args)...));
+        SendSysMessage(PGetParseString(entry, std::forward<Args>(args)...).c_str());
     }
 
     template<typename... Args>
     std::string PGetParseString(uint32 entry, Args&&... args) const
     {
-        return Acore::StringFormatFmt(GetAcoreString(entry), std::forward<Args>(args)...);
+        return Acore::StringFormat(GetAcoreString(entry), std::forward<Args>(args)...);
     }
 
     void SendErrorMessage(uint32 entry);

@@ -19,6 +19,8 @@
 #define DEF_SHADOWFANG_H
 
 #include "CreatureAIImpl.h"
+#include "SpellAuraEffects.h"
+#include "SpellScript.h"
 
 #define DataHeader "SK"
 #define ShadowfangKeepScriptName "instance_shadowfang_keep"
